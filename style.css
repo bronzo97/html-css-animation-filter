@@ -217,6 +217,117 @@
     }
 }
 
+.ex-13-button:hover .ex-13-top-white {
+    animation: top-right .5s linear, top-bottom .5s linear .5s, bottom-left .5s linear 1s, bottom-top .5s linear 1.5s, top-right-2 .5s linear 2s;
+}
+
+@keyframes top-right {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 90%
+    }
+}
+
+@keyframes top-bottom {
+    from {
+        left: 90%;
+    }
+    to {
+        left: 90%;
+        top: 80%;
+    }
+}
+
+@keyframes bottom-left {
+    from {
+        left: 90%;
+        top: 80%;
+    }
+    to {
+        left: -10%;
+        top: 80%;
+    }
+}
+
+@keyframes bottom-top {
+    from {
+        left: -10%;
+        top: 80%;
+    }
+    to {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+@keyframes top-right-2 {
+    from {
+        top: -10%;
+        left: -10%;
+    }
+    to {
+        left: 10%;
+        top: -10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom-left-b .5s linear, bottom-top-b 0.5s linear 0.5s, top-right-b 0.5s linear 1s, top-bottom-b 0.5s linear 1.5s, bottom-left-2-b 0.5s linear 2s;
+}
+
+@keyframes bottom-left-b {
+    from {
+        right: 20%;
+    }
+    to {
+        right: 75%;
+    }
+}
+
+@keyframes bottom-top-b {
+    from {
+        right: 75%;
+    }
+    to {
+        right: 75%;
+        bottom: 90%;
+    }
+}
+
+@keyframes top-right-b {
+    from {
+        right: 75%;
+        bottom: 90%;
+    }
+    to {
+        bottom: 90%;
+        right: -10%;
+    }
+}
+
+@keyframes top-bottom-b {
+    from {
+        bottom: 90%;
+        right: -10%;
+    }
+    to {
+        right: -10%;
+    }
+}
+
+@keyframes bottom-left-2-b {
+    from {
+        right: -10%;
+    }
+    to {
+        right: 20%;
+    }
+}
+
+
+
 
 
 
